@@ -1,0 +1,160 @@
+/usr/local/bin/python3.7 "/Users/coelho/Desktop/Deep Learning/Tensorflow/Tensorflow - Aula 08 - Classificação em Múltiplas Classes/exemplos_aula08/ex3_predict_images.py"
+Using TensorFlow backend.
+Found 2520 images belonging to 3 classes.
+Found 372 images belonging to 3 classes.
+2020-06-16 08:25:42.050347: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-06-16 08:25:42.070261: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f8625522f70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-16 08:25:42.070279: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 148, 148, 64)      1792      
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 74, 74, 64)        0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 72, 72, 64)        36928     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 36, 36, 64)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 34, 34, 128)       73856     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 17, 17, 128)       0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 15, 15, 128)       147584    
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 7, 7, 128)         0         
+_________________________________________________________________
+flatten (Flatten)            (None, 6272)              0         
+_________________________________________________________________
+dropout (Dropout)            (None, 6272)              0         
+_________________________________________________________________
+dense (Dense)                (None, 512)               3211776   
+_________________________________________________________________
+dense_1 (Dense)              (None, 3)                 1539      
+=================================================================
+Total params: 3,473,475
+Trainable params: 3,473,475
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/25
+20/20 [==============================] - 90s 5s/step - loss: 1.5871 - accuracy: 0.3377 - val_loss: 1.0847 - val_accuracy: 0.3925
+Epoch 2/25
+20/20 [==============================] - 100s 5s/step - loss: 1.1387 - accuracy: 0.3623 - val_loss: 1.0940 - val_accuracy: 0.3333
+Epoch 3/25
+20/20 [==============================] - 99s 5s/step - loss: 1.0878 - accuracy: 0.3980 - val_loss: 1.0373 - val_accuracy: 0.3656
+Epoch 4/25
+20/20 [==============================] - 111s 6s/step - loss: 1.0511 - accuracy: 0.4813 - val_loss: 0.7939 - val_accuracy: 0.8656
+Epoch 5/25
+20/20 [==============================] - 101s 5s/step - loss: 0.9619 - accuracy: 0.5679 - val_loss: 0.6636 - val_accuracy: 0.6022
+Epoch 6/25
+20/20 [==============================] - 97s 5s/step - loss: 0.8698 - accuracy: 0.6060 - val_loss: 0.4880 - val_accuracy: 0.6989
+Epoch 7/25
+20/20 [==============================] - 89s 4s/step - loss: 0.6919 - accuracy: 0.7079 - val_loss: 0.2612 - val_accuracy: 0.9301
+Epoch 8/25
+20/20 [==============================] - 138s 7s/step - loss: 0.5481 - accuracy: 0.7611 - val_loss: 0.2968 - val_accuracy: 0.9247
+Epoch 9/25
+20/20 [==============================] - 144s 7s/step - loss: 0.4653 - accuracy: 0.7996 - val_loss: 0.1441 - val_accuracy: 1.0000
+Epoch 10/25
+20/20 [==============================] - 151s 8s/step - loss: 0.4193 - accuracy: 0.8448 - val_loss: 0.0547 - val_accuracy: 1.0000
+Epoch 11/25
+20/20 [==============================] - 137s 7s/step - loss: 0.3903 - accuracy: 0.8556 - val_loss: 0.0699 - val_accuracy: 1.0000
+Epoch 12/25
+20/20 [==============================] - 93s 5s/step - loss: 0.2806 - accuracy: 0.8984 - val_loss: 0.3381 - val_accuracy: 0.8952
+Epoch 13/25
+20/20 [==============================] - 98s 5s/step - loss: 0.3414 - accuracy: 0.8746 - val_loss: 0.1343 - val_accuracy: 0.9677
+Epoch 14/25
+20/20 [==============================] - 93s 5s/step - loss: 0.1977 - accuracy: 0.9310 - val_loss: 0.4948 - val_accuracy: 0.7285
+Epoch 15/25
+20/20 [==============================] - 102s 5s/step - loss: 0.1733 - accuracy: 0.9373 - val_loss: 0.1130 - val_accuracy: 0.9597
+Epoch 16/25
+20/20 [==============================] - 94s 5s/step - loss: 0.2145 - accuracy: 0.9163 - val_loss: 0.0786 - val_accuracy: 0.9624
+Epoch 17/25
+20/20 [==============================] - 97s 5s/step - loss: 0.1536 - accuracy: 0.9460 - val_loss: 0.1261 - val_accuracy: 0.9543
+Epoch 18/25
+20/20 [==============================] - 87s 4s/step - loss: 0.1313 - accuracy: 0.9575 - val_loss: 0.0519 - val_accuracy: 0.9785
+Epoch 19/25
+20/20 [==============================] - 86s 4s/step - loss: 0.1237 - accuracy: 0.9567 - val_loss: 0.1297 - val_accuracy: 0.9489
+Epoch 20/25
+20/20 [==============================] - 92s 5s/step - loss: 0.1758 - accuracy: 0.9401 - val_loss: 0.0516 - val_accuracy: 0.9785
+Epoch 21/25
+20/20 [==============================] - 89s 4s/step - loss: 0.1093 - accuracy: 0.9603 - val_loss: 0.1564 - val_accuracy: 0.9462
+Epoch 22/25
+20/20 [==============================] - 93s 5s/step - loss: 0.1000 - accuracy: 0.9639 - val_loss: 0.0376 - val_accuracy: 0.9839
+Epoch 23/25
+20/20 [==============================] - 93s 5s/step - loss: 0.1359 - accuracy: 0.9492 - val_loss: 0.0642 - val_accuracy: 0.9731
+Epoch 24/25
+20/20 [==============================] - 103s 5s/step - loss: 0.1119 - accuracy: 0.9651 - val_loss: 0.0262 - val_accuracy: 0.9839
+Epoch 25/25
+20/20 [==============================] - 90s 4s/step - loss: 0.0804 - accuracy: 0.9738 - val_loss: 0.0305 - val_accuracy: 0.9839
+['./validation_images/scissors-hires1.png', './validation_images/scissors-hires2.png', './validation_images/rock3.png', './validation_images/paper4.png', './validation_images/paper5.png', './validation_images/rock2.png', './validation_images/paper7.png', './validation_images/paper6.png', './validation_images/rock1.png', './validation_images/rock5.png', './validation_images/scissors9.png', './validation_images/paper2.png', './validation_images/rock-hires2.png', './validation_images/paper3.png', './validation_images/paper-hires1.png', './validation_images/scissors8.png', './validation_images/rock4.png', './validation_images/rock6.png', './validation_images/paper1.png', './validation_images/rock-hires1.png', './validation_images/paper-hires2.png', './validation_images/rock7.png', './validation_images/scissors6.png', './validation_images/scissors7.png', './validation_images/rock9.png', './validation_images/scissors5.png', './validation_images/scissors4.png', './validation_images/rock8.png', './validation_images/scissors1.png', './validation_images/scissors3.png', './validation_images/paper8.png', './validation_images/paper9.png', './validation_images/scissors2.png']
+[0. 0. 1.]
+./validation_images/scissors-hires1.png is a scissor
+[0. 0. 1.]
+./validation_images/scissors-hires2.png is a scissor
+[0. 1. 0.]
+./validation_images/rock3.png is a rock
+[1. 0. 0.]
+./validation_images/paper4.png is a paper
+[1. 0. 0.]
+./validation_images/paper5.png is a paper
+[0. 1. 0.]
+./validation_images/rock2.png is a rock
+[1. 0. 0.]
+./validation_images/paper7.png is a paper
+[1. 0. 0.]
+./validation_images/paper6.png is a paper
+[0. 1. 0.]
+./validation_images/rock1.png is a rock
+[0. 1. 0.]
+./validation_images/rock5.png is a rock
+[0. 0. 1.]
+./validation_images/scissors9.png is a scissor
+[1. 0. 0.]
+./validation_images/paper2.png is a paper
+[0. 1. 0.]
+./validation_images/rock-hires2.png is a rock
+[1. 0. 0.]
+./validation_images/paper3.png is a paper
+[1. 0. 0.]
+./validation_images/paper-hires1.png is a paper
+[0. 0. 1.]
+./validation_images/scissors8.png is a scissor
+[0. 1. 0.]
+./validation_images/rock4.png is a rock
+[0. 1. 0.]
+./validation_images/rock6.png is a rock
+[1. 0. 0.]
+./validation_images/paper1.png is a paper
+[0. 1. 0.]
+./validation_images/rock-hires1.png is a rock
+[1. 0. 0.]
+./validation_images/paper-hires2.png is a paper
+[0. 1. 0.]
+./validation_images/rock7.png is a rock
+[0. 0. 1.]
+./validation_images/scissors6.png is a scissor
+[0. 0. 1.]
+./validation_images/scissors7.png is a scissor
+[0. 1. 0.]
+./validation_images/rock9.png is a rock
+[0. 0. 1.]
+./validation_images/scissors5.png is a scissor
+[0. 0. 1.]
+./validation_images/scissors4.png is a scissor
+[0. 1. 0.]
+./validation_images/rock8.png is a rock
+[0. 0. 1.]
+./validation_images/scissors1.png is a scissor
+[0. 0. 1.]
+./validation_images/scissors3.png is a scissor
+[1. 0. 0.]
+./validation_images/paper8.png is a paper
+[1.6635199e-19 0.0000000e+00 1.0000000e+00]
+./validation_images/paper9.png is a scissor
+[0. 0. 1.]
+./validation_images/scissors2.png is a scissor
+
+TOTAL PAPER:  10
+TOTAL ROCK:  11
+TOTAL SCISSOR:  12
